@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>앱 정책 모음</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap">
+<style>
+  :root {
+    --bg: #fbfaf7;
+    --fg: #1f2a33;
+    --muted: #5d6a75;
+    --line: #dcd8cf;
+    --accent: #2b6a8f;
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #151b21;
+      --fg: #e6ebef;
+      --muted: #9aa7b2;
+      --line: #2c353d;
+      --accent: #8dbfdc;
+      color-scheme: dark;
+    }
+  }
+  body {
+    background: var(--bg);
+    color: var(--fg);
+    font-family: 'Noto Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', system-ui, sans-serif;
+    font-size: 16px;
+    line-height: 1.75;
+    margin: 0;
+  }
+  main { max-width: 44rem; margin: 0 auto; padding-inline: 20px; padding-block: 2.5rem 4rem; }
+  h1 { font-size: 1.6rem; line-height: 1.3; margin: 0 0 .4rem; }
+  p { margin: .5rem 0; color: var(--muted); }
+  ul { list-style: none; margin: 1.6rem 0 0; padding: 0; border-top: 1px solid var(--line); }
+  li { padding: .9rem 0; border-bottom: 1px solid var(--line); }
+  li strong { display: block; font-weight: 700; color: var(--fg); }
+  a { color: var(--accent); }
+  :focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>앱 정책 모음</h1>
+  <p>앱마다 개인정보처리방침을 이곳에 올립니다.</p>
+  <ul>
+    <li>
+      <strong>한글별 여행</strong>
+      <a href="hangulbyeol/privacy.html">개인정보처리방침</a>
+    </li>
+  </ul>
+</main>
+</body>
+</html>
