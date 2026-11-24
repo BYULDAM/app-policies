@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>메모딸깍 개인정보처리방침</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap">
+<style>
+  :root {
+    --bg: #fbfaf7;
+    --fg: #1f2a33;
+    --muted: #5d6a75;
+    --line: #dcd8cf;
+    --accent: #2b6a8f;
+    --band: #f1eee7;
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #151b21;
+      --fg: #e6ebef;
+      --muted: #9aa7b2;
+      --line: #2c353d;
+      --accent: #8dbfdc;
+      --band: #1d252c;
+      color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #151b21;
+    --fg: #e6ebef;
+    --muted: #9aa7b2;
+    --line: #2c353d;
+    --accent: #8dbfdc;
+    --band: #1d252c;
+    color-scheme: dark;
+  }
+  body {
+    background: var(--bg);
+    color: var(--fg);
+    font-family: 'Noto Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', system-ui, sans-serif;
+    font-size: 16px;
+    line-height: 1.75;
+  }
+  main { max-width: 44rem; margin: 0 auto; padding-inline: 20px; padding-block: 2.5rem 4rem; }
+  h1 { font-size: 1.7rem; line-height: 1.3; margin: 0 0 .4rem; text-wrap: balance; }
+  h2 { font-size: 1.15rem; margin: 2.2rem 0 .5rem; padding-top: 1.1rem; border-top: 1px solid var(--line); }
+  p { margin: .6rem 0; }
+  ul { margin: .6rem 0; padding-left: 1.3rem; }
+  li { margin: .35rem 0; }
+  hr { border: 0; border-top: 1px solid var(--line); margin: 1.6rem 0 0; }
+  a { color: var(--accent); }
+  strong { font-weight: 700; }
+  .table { overflow-x: auto; margin: .8rem 0; }
+  table { border-collapse: collapse; width: 100%; min-width: 30rem; font-size: .94rem; }
+  th, td { text-align: left; vertical-align: top; padding: .55rem .75rem; border: 1px solid var(--line); }
+  th { background: var(--band); font-weight: 700; }
+  :focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+</style>
+</head>
+<body>
+<main>
+<h1>개인정보처리방침 — 메모딸깍</h1>
+<p><strong>시행일: 2026년 11월 24일</strong></p>
+<p>메모딸깍(이하 "앱")은 글, 체크리스트, 일기, 사진, 영수증을 기록하는 안드로이드 메모 앱입니다. 개발자는 이용자의 개인정보를 소중하게 여기며, 앱은 <strong>이용자가 쓴 메모와 사진을 개발자 서버로 보내지 않습니다.</strong> 앱에는 회원가입과 로그인이 없고 개발자의 자체 서버도 없습니다. 광고(Google AdMob)와 결제(Google Play)는 Google이 처리하며, 그 내용은 아래에 적었습니다.</p>
+<hr>
+<h2>1. 개발자가 수집하는 개인정보</h2>
+<p>개발자는 이용자의 메모, 사진, 영수증, 이름, 연락처, 위치 등 <strong>어떤 개인정보도 수집하지 않습니다.</strong> 앱에는 이용 통계나 오류 수집 도구(Firebase 등)가 들어 있지 않습니다.</p>
+<h2>2. 기기에만 저장되는 정보</h2>
+<ul>
+<li>이용자가 쓴 메모(글, 체크리스트, 지출·일기·회의록 내용), 폴더, 글자 색, 알림 시각, 붙인 사진은 <strong>기기 안에만</strong> 저장됩니다. 홈 화면 위젯도 기기 안의 메모를 읽어 보여 줄 뿐 외부로 보내지 않습니다.</li>
+<li>앱을 삭제하면 기기 안의 이 정보도 함께 삭제됩니다.</li>
+<li>Android의 자동 백업 기능을 켜 두었다면, 기기 설정에 따라 운영체제(Google)가 앱 데이터를 이용자의 Google 계정에 백업할 수 있습니다. 이는 개발자가 접근할 수 없는 Android 기본 기능이며 기기 설정에서 끌 수 있습니다.</li>
+</ul>
+<h2>3. 사진과 영수증 읽기</h2>
+<ul>
+<li>이용자가 메모에 붙이려고 고른 사진은 크기를 줄여 앱 안에 복사해 저장합니다. 사진을 고를 때는 Android의 사진 선택 화면을 쓰며, 앱이 사진첩 전체를 읽는 권한은 요청하지 않습니다.</li>
+<li>영수증 읽기는 <strong>기기 안에서</strong> 글자를 인식합니다(Google ML Kit 한국어 글자 인식). 사진과 읽은 글은 개발자에게 전송되지 않습니다. 글자 인식 모듈은 처음 쓸 때 Google Play 서비스가 기기로 내려받을 수 있으며, 이때 Google이 모듈 사용에 관한 성능·사용 정보를 받을 수 있습니다. 사진과 글자 내용은 포함되지 않습니다.</li>
+<li>사진 찍기는 기기의 카메라 앱을 불러 찍은 사진을 받아 오는 방식이며, 앱이 카메라 권한을 직접 요청하지 않습니다.</li>
+</ul>
+<h2>4. 메모 잠금</h2>
+<p>메모 잠금(프리미엄)은 기기에 등록된 지문·얼굴·화면 잠금으로 확인합니다. 이 인증 정보는 운영체제가 처리하며, 앱과 개발자는 지문·얼굴 정보를 받거나 저장하지 않습니다.</p>
+<h2>5. 백업·복원 파일</h2>
+<p>이용자가 앱에서 백업을 만들면 이용자가 고른 위치에 파일(메모와 사진)이 저장됩니다. 파일을 어디에 두고 누구와 공유할지는 이용자가 정하며, 개발자에게는 전송되지 않습니다. 복원할 때는 이용자가 고른 파일을 읽어 기기 안의 메모에 합칩니다.</p>
+<h2>6. 메모 공유</h2>
+<p>공유 버튼을 누르면 해당 메모의 글, 사진 또는 글과 사진을 합친 이미지가 <strong>이용자가 고른 앱(메신저, 문자 등)</strong>으로 전달됩니다. 이는 이용자가 직접 보내는 것이며 개발자에게는 전송되지 않습니다. 받는 사람과 전달 방식은 이용자가 정합니다.</p>
+<h2>7. 광고 (Google AdMob)</h2>
+<p>무료 이용 중에는 앱 하단 배너 광고와, 설치 7일 이후 새 메모를 쓸 때 나오는 전면 광고(하루 최대 3회)가 표시됩니다. 광고를 보여 주기 위해 Google이 <strong>광고 ID, IP 주소, 기기 정보, 광고 상호작용 정보</strong> 등을 수집·사용할 수 있습니다. 이 정보는 Google이 처리하며 개발자는 받지 않습니다. 메모 내용은 광고에 쓰이지 않습니다.</p>
+<ul>
+<li>광고 ID는 기기 설정(설정 → Google → 광고)에서 삭제하거나 맞춤 광고를 끌 수 있습니다.</li>
+<li>Google의 처리 방식: <a href="https://policies.google.com/technologies/ads?hl=ko">Google 광고 기술 정책</a>, <a href="https://policies.google.com/privacy?hl=ko">Google 개인정보처리방침</a></li>
+<li>프리미엄 구독 중에는 광고가 표시되지 않습니다.</li>
+</ul>
+<h2>8. 결제 (Google Play)</h2>
+<p>프리미엄은 Google Play 월 구독으로 처리됩니다. 결제 수단과 결제 정보는 Google이 처리하며 개발자는 받지 않습니다. 앱은 구독 여부(프리미엄 이용 가능 여부)만 Google Play에서 확인합니다. 구독은 Google Play의 구독 관리에서 언제든 해지할 수 있습니다.</p>
+<h2>9. 앱이 사용하는 권한</h2>
+<div class="table">
+<table>
+<tr><th>권한</th><th>사용 목적</th></tr>
+<tr><td>알림</td><td>이용자가 정한 시각에 메모 알림을 보여 주기 위해</td></tr>
+<tr><td>부팅 완료 수신</td><td>기기를 껐다 켠 뒤에도 예약된 알림을 다시 등록하기 위해</td></tr>
+<tr><td>인터넷, 네트워크 상태</td><td>광고 표시와 Google Play 결제 확인을 위해</td></tr>
+<tr><td>광고 ID</td><td>광고 표시를 위해(이용자가 기기에서 삭제하거나 끌 수 있음)</td></tr>
+<tr><td>Google Play 결제</td><td>프리미엄 구독과 구독 확인을 위해</td></tr>
+</table>
+</div>
+<p>카메라, 위치, 마이크, 연락처, 사진첩 전체 읽기 권한은 요청하지 않습니다.</p>
+<h2>10. 개인정보의 국외 이전</h2>
+<p>7항과 8항의 정보는 Google LLC(미국 등 Google의 데이터 센터가 있는 국가)가 처리합니다.</p>
+<ul>
+<li>이전받는 자: Google LLC</li>
+<li>이전 항목: 7항과 8항에 적은 정보</li>
+<li>이전 시기·방법: 앱을 사용하는 동안 인터넷을 통해 전송</li>
+<li>이용 목적: 광고 표시, 결제 처리</li>
+<li>보유·이용 기간: Google의 정책에 따르며, 목적을 달성하면 삭제</li>
+</ul>
+<h2>11. 정보의 보관과 삭제</h2>
+<p>개발자의 서버에 보관되는 이용자 정보는 없습니다. 기기 안의 메모, 사진, 설정은 앱을 삭제하면 지워지며, 앱 안에서 메모를 지우면 그 메모에 붙은 사진도 함께 지워집니다.</p>
+<h2>12. 아동</h2>
+<p>앱은 만 14세 미만 아동을 대상으로 하지 않으며, 개발자는 아동의 개인정보를 수집하지 않습니다.</p>
+<h2>13. 방침 변경</h2>
+<p>이 방침이 바뀌면 이 페이지에 새 내용과 시행일을 올립니다.</p>
+<h2>14. 문의</h2>
+<p>앱: 메모딸깍<br>문의: euntaek7140@gmail.com</p>
+</main>
+</body>
+</html>
